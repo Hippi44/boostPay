@@ -1,0 +1,196 @@
+/* ==========================================================================
+   Section: How It Works (КАК ЭТО РАБОТАЕТ)
+   ========================================================================== */
+
+.how-it-works {
+  padding-top: 0;
+  padding-bottom: var(--space-section);
+  background: transparent;
+}
+
+/* Steps grid */
+.how-it-works__steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+}
+
+/* Single step */
+.how-it-works__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  max-width: 20rem;
+  padding: 0 clamp(0.5rem, 2vw, 1.5rem);
+  position: relative;
+}
+
+/* Number badge */
+.how-it-works__step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--color-accent-light), var(--color-accent-dark));
+  color: var(--color-text-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  box-shadow:
+    0 0 20px rgba(124, 58, 237, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  margin-bottom: var(--space-lg);
+  position: relative;
+  z-index: 2;
+}
+
+.how-it-works__step-number::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(147, 51, 234, 0.4);
+}
+
+/* Icon */
+.how-it-works__step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: var(--space-md);
+  color: var(--color-accent-light);
+  filter: drop-shadow(0 0 12px rgba(124, 58, 237, 0.4));
+}
+
+.how-it-works__step-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Title */
+.how-it-works__step-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+/* Description */
+.how-it-works__step-text {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
+  max-width: 14rem;
+}
+
+/* Connector between steps */
+.how-it-works__connector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1.375rem;
+  flex-shrink: 0;
+}
+
+.how-it-works__connector-line {
+  width: clamp(1.5rem, 4vw, 3rem);
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(147, 51, 234, 0.5) 0,
+    rgba(147, 51, 234, 0.5) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+.how-it-works__connector-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--color-accent-light);
+  box-shadow: 0 0 8px rgba(124, 58, 237, 0.6);
+  flex-shrink: 0;
+}
+
+/* ─── Desktop wide ─── */
+@media (min-width: 1200px) {
+  .how-it-works__step {
+    max-width: 22rem;
+    padding: 0 2rem;
+  }
+
+  .how-it-works__step-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .how-it-works__connector-line {
+    width: 3.5rem;
+  }
+}
+
+/* ─── Tablet ─── */
+@media (max-width: 1024px) {
+  .how-it-works__steps {
+    flex-wrap: wrap;
+    gap: var(--space-xl);
+  }
+
+  .how-it-works__connector {
+    display: none;
+  }
+
+  .how-it-works__step {
+    flex: 0 0 calc(33.333% - 1rem);
+    min-width: 10rem;
+  }
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 768px) {
+  .how-it-works__steps {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2xl);
+  }
+
+  .how-it-works__step {
+    flex: none;
+    width: 100%;
+    max-width: 18rem;
+  }
+
+  .how-it-works__step-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: var(--font-size-base);
+  }
+
+  .how-it-works__step-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-works__step {
+    max-width: 16rem;
+  }
+
+  .how-it-works__step-title {
+    font-size: var(--font-size-sm);
+  }
+
+  .how-it-works__step-text {
+    font-size: var(--font-size-xs);
+  }
+}

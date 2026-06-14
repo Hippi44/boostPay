@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BOOST PAY STORE — пополнение игровой валюты быстро, безопасно и без ограничений. 100+ игр, мгновенные платежи.">
+  <title>BOOST PAY STORE — Пополняй игры за секунды</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Base & section styles -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/features.css">
+  <link rel="stylesheet" href="css/games.css">
+  <link rel="stylesheet" href="css/how-it-works.css">
+  <link rel="stylesheet" href="css/trust.css">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/cta.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+  <!-- 1. Header -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a class="header__logo" href="#hero" aria-label="BOOST PAY STORE — на главную">
+        <span class="header__logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4L38 14V34L24 44L10 34V14L24 4Z" stroke="url(#logo-gem-stroke)" stroke-width="1.5"/>
+            <path d="M24 10L32 16V32L24 38L16 32V16L24 10Z" fill="url(#logo-gem-fill)"/>
+            <path d="M24 16L28 19V29L24 32L20 29V19L24 16Z" fill="#c4b5fd" opacity="0.9"/>
+            <defs>
+              <linearGradient id="logo-gem-stroke" x1="10" y1="4" x2="38" y2="44">
+                <stop stop-color="#a855f7"/>
+                <stop offset="1" stop-color="#7c3aed"/>
+              </linearGradient>
+              <linearGradient id="logo-gem-fill" x1="16" y1="10" x2="32" y2="38">
+                <stop stop-color="#9333ea"/>
+                <stop offset="1" stop-color="#6d28d9"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="header__logo-text">
+          <span class="header__logo-title">
+            <span class="header__logo-boost">BOOST</span>
+            <span class="header__logo-pay">PAY</span>
+          </span>
+          <span class="header__logo-subtitle">
+            <span class="header__logo-line" aria-hidden="true"></span>
+            <span>STORE</span>
+            <span class="header__logo-line" aria-hidden="true"></span>
+          </span>
+        </span>
+      </a>
+
+      <button
+        class="header__burger"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="header-nav"
+        id="header-burger"
+      >
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+
+      <nav class="header__nav" id="header-nav" aria-label="Основная навигация">
+        <ul class="header__nav-list">
+          <li><a class="header__nav-link is-active" href="#hero">Главная</a></li>
+          <li><a class="header__nav-link" href="#games">Игры</a></li>
+          <li><a class="header__nav-link" href="#reviews">Отзывы</a></li>
+          <li><a class="header__nav-link" href="#" data-cta="support">Поддержка</a></li>
+          <li><a class="header__nav-link" href="#faq">FAQ</a></li>
+          <li><a class="header__nav-link" href="#news">Блог</a></li>
+        </ul>
+
+        <div class="header__actions">
+          <a class="header__btn header__btn--support" href="#" data-cta="support">
+            <svg class="header__btn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 14v2a2 2 0 0 0 2 2h1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 14v2a2 2 0 0 1-2 2h-1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M6.5 18.5A6.5 6.5 0 0 1 12 5.5a6.5 6.5 0 0 1 5.5 13" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 12v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Поддержка 24/7
+          </a>
+          <a class="header__btn header__btn--login" href="#" data-cta="primary">
+            <svg class="header__btn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M5 19.5c0-3.5 3.1-5.5 7-5.5s7 2 7 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Войти
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero + Features — первый экран -->
+    <div class="hero-shell">
+
+    <!-- 2. Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__glow hero__glow--center"></div>
+        <div class="hero__glow hero__glow--left"></div>
+        <div class="hero__glow hero__glow--right"></div>
+      </div>
+
+      <div class="hero__content container">
+        <div class="hero__logo" aria-hidden="true">
+          <p class="hero__logo-title">
+            <span class="hero__logo-boost">BOOST</span>
+            <span class="hero__logo-pay">PAY</span>
+          </p>
+          <p class="hero__logo-subtitle">
+            <span class="hero__logo-line"></span>
+            <span>STORE</span>
+            <span class="hero__logo-line"></span>
+          </p>
+        </div>
+
+        <h1 class="hero__title">Пополняй игры за секунды</h1>
+        <p class="hero__subtitle">Быстро. Безопасно. Без ограничений.</p>
+
+        <ul class="hero__highlights">
+          <li class="hero__highlight">
+            <span class="hero__highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="12" r="2.5" fill="currentColor"/>
+                <path d="M12 4v2M12 18v2M4 12h2M18 12h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+            100+ игр
+          </li>
+          <li class="hero__highlight">
+            <span class="hero__highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M13 2L5 13h6l-1 9 9-13h-6l1-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            Мгновенные платежи
+          </li>
+          <li class="hero__highlight">
+            <span class="hero__highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            Без блокировок
+          </li>
+        </ul>
+
+        <a class="hero__cta" href="#" data-cta="primary">
+          <span class="hero__cta-gems" aria-hidden="true">
+            <span class="hero__cta-gem hero__cta-gem--tl"></span>
+            <span class="hero__cta-gem hero__cta-gem--tc"></span>
+            <span class="hero__cta-gem hero__cta-gem--tr"></span>
+            <span class="hero__cta-gem hero__cta-gem--ml"></span>
+            <span class="hero__cta-gem hero__cta-gem--mr"></span>
+            <span class="hero__cta-gem hero__cta-gem--bl"></span>
+            <span class="hero__cta-gem hero__cta-gem--bc"></span>
+            <span class="hero__cta-gem hero__cta-gem--br"></span>
+          </span>
+          <span class="hero__cta-text">Пополнить сейчас</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 3. Features Bar -->
+    <section class="features" id="features">
+      <div class="container container--wide">
+        <div class="features__bar">
+          <article class="features__item">
+            <div class="features__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="features__body">
+              <h2 class="features__title">Безопасно</h2>
+              <p class="features__text">Мы не храним ваши данные и используем защищенные платежные системы</p>
+            </div>
+          </article>
+
+          <article class="features__item">
+            <div class="features__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M13 2L5 13h6l-1 9 9-13h-6l1-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="features__body">
+              <h2 class="features__title">Мгновенно</h2>
+              <p class="features__text">Пополнение приходит мгновенно в любое время суток</p>
+            </div>
+          </article>
+
+          <article class="features__item">
+            <div class="features__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3l3.5 6.5L22 11l-5 5 1.5 7L12 19l-6.5 4L7 16 2 11l6.5-1.5L12 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="features__body">
+              <h2 class="features__title">Выгодно</h2>
+              <p class="features__text">Лучшие цены на рынке и регулярные скидки для постоянных клиентов</p>
+            </div>
+          </article>
+
+          <article class="features__item">
+            <div class="features__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 14v2a2 2 0 0 0 2 2h1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M20 14v2a2 2 0 0 1-2 2h-1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M6.5 18.5A6.5 6.5 0 0 1 12 5.5a6.5 6.5 0 0 1 5.5 13" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 12v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="features__body">
+              <h2 class="features__title">Поддержка 24/7</h2>
+              <p class="features__text">Наша команда всегда на связи и готова помочь с любым вопросом</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    </div><!-- /.hero-shell -->
+
+    <!-- 4. Game Selection -->
+    <section class="games" id="games">
+      <div class="container container--wide">
+        <header class="section-heading games__heading">
+          <span class="section-heading__ornament" aria-hidden="true">
+            <span class="section-heading__line"></span>
+            <span class="section-heading__gem"></span>
+          </span>
+          <div class="games__heading-text">
+            <p class="games__top-label">В топе</p>
+            <h2 class="section-heading__title">Выбери свою игру</h2>
+          </div>
+          <span class="section-heading__ornament" aria-hidden="true">
+            <span class="section-heading__gem"></span>
+            <span class="section-heading__line"></span>
+          </span>
+        </header>
+
+        <div class="games__carousel" data-carousel="games">
+          <button class="games__arrow games__arrow--prev" type="button" data-carousel-prev aria-label="Предыдущие игры">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="games__track" data-carousel-track tabindex="0" aria-label="Список игр в топе">
+            <article class="games__card">
+              <div class="games__card-art games__card-art--tiles-survive" role="img" aria-label="Tiles survive"></div>
+              <div class="games__card-footer">
+                <h3 class="games__card-title">Tiles survive</h3>
+              </div>
+            </article>
+
+            <article class="games__card">
+              <div class="games__card-art games__card-art--last-asalym" role="img" aria-label="Last Asalym"></div>
+              <div class="games__card-footer">
+                <h3 class="games__card-title">Last Asalym</h3>
+              </div>
+            </article>
+
+            <article class="games__card">
+              <div class="games__card-art games__card-art--pubg" role="img" aria-label="Pubg Mobile"></div>
+              <div class="games__card-footer">
+                <h3 class="games__card-title">Pubg Mobile</h3>
+              </div>
+            </article>
+
+            <article class="games__card">
+              <div class="games__card-art games__card-art--fortnait" role="img" aria-label="Fortnait"></div>
+              <div class="games__card-footer">
+                <h3 class="games__card-title">Fortnite</h3>
+              </div>
+            </article>
+
+            <article class="games__card">
+              <div class="games__card-art games__card-art--royal-match" role="img" aria-label="Royal match"></div>
+              <div class="games__card-footer">
+                <h3 class="games__card-title">Royal match</h3>
+              </div>
+            </article>
+
+            <article class="games__card">
+              <div class="games__card-art games__card-art--roblox" role="img" aria-label="roblox"></div>
+              <div class="games__card-footer">
+                <h3 class="games__card-title">roblox</h3>
+              </div>
+            </article>
+
+            <article class="games__card">
+              <div class="games__card-art games__card-art--highrise" role="img" aria-label="Highrise"></div>
+              <div class="games__card-footer">
+                <h3 class="games__card-title">Highrise</h3>
+              </div>
+            </article>
+          </div>
+
+          <button class="games__arrow games__arrow--next" type="button" data-carousel-next aria-label="Следующие игры">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. How It Works -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container container--wide">
+        <header class="section-heading">
+          <span class="section-heading__ornament" aria-hidden="true">
+            <span class="section-heading__line"></span>
+            <span class="section-heading__gem"></span>
+          </span>
+          <h2 class="section-heading__title">Как это работает</h2>
+          <span class="section-heading__ornament" aria-hidden="true">
+            <span class="section-heading__gem"></span>
+            <span class="section-heading__line"></span>
+          </span>
+        </header>
+
+        <div class="how-it-works__steps">
+          <article class="how-it-works__step">
+            <div class="how-it-works__step-number" aria-hidden="true">1</div>
+            <div class="how-it-works__step-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="14" width="36" height="22" rx="4" stroke="currentColor" stroke-width="2"/>
+                <circle cx="16" cy="25" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="25" r="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M22 21h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M24 21v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="how-it-works__step-title">Выбери игру</h3>
+            <p class="how-it-works__step-text">Выбери игру из списка и укажи нужное количество валюты</p>
+          </article>
+
+          <div class="how-it-works__connector" aria-hidden="true">
+            <span class="how-it-works__connector-line"></span>
+            <span class="how-it-works__connector-dot"></span>
+            <span class="how-it-works__connector-line"></span>
+          </div>
+
+          <article class="how-it-works__step">
+            <div class="how-it-works__step-number" aria-hidden="true">2</div>
+            <div class="how-it-works__step-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="6" width="28" height="36" rx="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M18 18h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M18 24h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M18 30h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="how-it-works__step-title">Введи данные</h3>
+            <p class="how-it-works__step-text">Укажи свой ID или никнейм и выбери удобный способ оплаты</p>
+          </article>
+
+          <div class="how-it-works__connector" aria-hidden="true">
+            <span class="how-it-works__connector-line"></span>
+            <span class="how-it-works__connector-dot"></span>
+            <span class="how-it-works__connector-line"></span>
+          </div>
+
+          <article class="how-it-works__step">
+            <div class="how-it-works__step-number" aria-hidden="true">3</div>
+            <div class="how-it-works__step-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 6L30 14V30L24 38L18 30V14L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M24 14L27 18V26L24 29L21 26V18L24 14Z" fill="currentColor" opacity="0.3"/>
+                <path d="M18 38L24 44L30 38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="how-it-works__step-title">Получи валюту</h3>
+            <p class="how-it-works__step-text">Оплата произведена, валюта начислена на твой аккаунт моментально</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Trust Indicators -->
+    <section class="trust" id="trust">
+      <div class="container container--wide">
+        <header class="section-heading">
+          <span class="section-heading__ornament" aria-hidden="true">
+            <span class="section-heading__line"></span>
+            <span class="section-heading__gem"></span>
+          </span>
+          <h2 class="section-heading__title">Почему нас выбирают</h2>
+          <span class="section-heading__ornament" aria-hidden="true">
+            <span class="section-heading__gem"></span>
+            <span class="section-heading__line"></span>
+          </span>
+        </header>
+
+        <div class="trust__grid">
+          <article class="trust__item">
+            <div class="trust__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4L6 12V22C6 33.1 13.7 43.4 24 46C34.3 43.4 42 33.1 42 22V12L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M17 24L22 29L32 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="trust__title">Надёжность</h3>
+            <p class="trust__text">Тысячи клиентов доверяют нам каждый день</p>
+          </article>
+
+          <article class="trust__item">
+            <div class="trust__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4L29.5 15.5L42 17.5L33 26L35.5 39L24 33L12.5 39L15 26L6 17.5L18.5 15.5L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="trust__title">Лучшие цены</h3>
+            <p class="trust__text">Мы предлагаем самые выгодные цены на рынке</p>
+          </article>
+
+          <article class="trust__item">
+            <div class="trust__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4L6 12V22C6 33.1 13.7 43.4 24 46C34.3 43.4 42 33.1 42 22V12L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <circle cx="24" cy="22" r="6" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 22L23 25L28 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="trust__title">Без риска</h3>
+            <p class="trust__text">Без блокировок и проблем с аккаунтом</p>
+          </article>
+
+          <article class="trust__item">
+            <div class="trust__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26 4L8 28H22L20 44L40 18H26L26 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="trust__title">Быстрая доставка</h3>
+            <p class="trust__text">Мгновенное зачисление валюты 24/7</p>
+          </article>
+
+          <article class="trust__item">
+            <div class="trust__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="18" width="36" height="24" rx="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M24 4L30 18H18L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <circle cx="24" cy="30" r="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M24 26V34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M20 30H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="trust__title">Бонусы и скидки</h3>
+            <p class="trust__text">Постоянные акции и специальные предложения для клиентов</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Reviews -->
+    <section class="reviews" id="reviews">
+      <div class="container container--wide">
+        <header class="section-heading">
+          <span class="section-heading__ornament" aria-hidden="true">
+            <span class="section-heading__line"></span>
+            <span class="section-heading__gem"></span>
+          </span>
+          <h2 class="section-heading__title">Отзывы наших клиентов</h2>
+          <span class="section-heading__ornament" aria-hidden="true">
+            <span class="section-heading__gem"></span>
+            <span class="section-heading__line"></span>
+          </span>
+        </header>
+
+        <div class="reviews__grid">
+          <article class="reviews__card">
+            <div class="reviews__avatar" aria-hidden="true">
+              <span class="reviews__avatar-letter">И</span>
+            </div>
+            <h3 class="reviews__name">Игорь</h3>
+            <div class="reviews__stars" aria-label="5 из 5 звёзд">
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+            </div>
+            <p class="reviews__text">Пополнил Genshin Impact, все быстро, удобно и безопасно!</p>
+          </article>
+
+          <article class="reviews__card">
+            <div class="reviews__avatar" aria-hidden="true">
+              <span class="reviews__avatar-letter">М</span>
+            </div>
+            <h3 class="reviews__name">Марина</h3>
+            <div class="reviews__stars" aria-label="5 из 5 звёзд">
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+            </div>
+            <p class="reviews__text">Отличный сервис! Поддержка на связи, помогли настроить!</p>
+          </article>
+
+          <article class="reviews__card">
+            <div class="reviews__avatar" aria-hidden="true">
+              <span class="reviews__avatar-letter">А</span>
+            </div>
+            <h3 class="reviews__name">Алексей</h3>
+            <div class="reviews__stars" aria-label="5 из 5 звёзд">
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+            </div>
+            <p class="reviews__text">Diablo Immortal пополнил за минуту. Всё прям моментально!</p>
+          </article>
+
+          <article class="reviews__card">
+            <div class="reviews__avatar" aria-hidden="true">
+              <span class="reviews__avatar-letter">В</span>
+            </div>
+            <h3 class="reviews__name">Владимир</h3>
+            <div class="reviews__stars" aria-label="5 из 5 звёзд">
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+              <span class="reviews__star" aria-hidden="true">★</span>
+            </div>
+            <p class="reviews__text">Лучшие цены на рынке, проверено! Рекомендую всем друзьям!</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. News & Promotions -->
+    <section class="news" id="news">
+      <div class="container container--wide">
+        <header class="section-heading">
+          <span class="section-heading__ornament" aria-hidden="true">
+            <span class="section-heading__line"></span>
+            <span class="section-heading__gem"></span>
+          </span>
+          <h2 class="section-heading__title">Новости и акции</h2>
+          <span class="section-heading__ornament" aria-hidden="true">
+            <span class="section-heading__gem"></span>
+            <span class="section-heading__line"></span>
+          </span>
+        </header>
+
+        <div class="news__grid">
+          <article class="news__card">
+            <div class="news__image">
+              <span class="news__tag news__tag--promo">АКЦИЯ</span>
+            </div>
+            <div class="news__body">
+              <time class="news__date" datetime="2024-05-20">20.05.2024</time>
+              <h3 class="news__title">Скидки до 20% на пополнение игр!</h3>
+              <p class="news__text">Только до конца недели специальные условия на пополнение игр.</p>
+              <a class="news__link" href="#">Подробнее →</a>
+            </div>
+          </article>
+
+          <article class="news__card">
+            <div class="news__image">
+              <span class="news__tag news__tag--news">НОВОСТЬ</span>
+            </div>
+            <div class="news__body">
+              <time class="news__date" datetime="2024-05-18">18.05.2024</time>
+              <h3 class="news__title">Добавили новые способы оплаты!</h3>
+              <p class="news__text">Теперь доступны все банковские карты для пополнения баланса.</p>
+              <a class="news__link" href="#">Подробнее →</a>
+            </div>
+          </article>
+
+          <article class="news__card">
+            <div class="news__image">
+              <span class="news__tag news__tag--update">ОБНОВЛЕНИЕ</span>
+            </div>
+            <div class="news__body">
+              <time class="news__date" datetime="2024-05-15">15.05.2024</time>
+              <h3 class="news__title">Расширили список игр</h3>
+              <p class="news__text">Добавили более 20 новых игр и обновили цены для вас.</p>
+              <a class="news__link" href="#">Подробнее →</a>
+            </div>
+          </article>
+
+          <article class="news__card">
+            <div class="news__image">
+              <span class="news__tag news__tag--promo">АКЦИЯ</span>
+            </div>
+            <div class="news__body">
+              <time class="news__date" datetime="2024-05-15">15.05.2024</time>
+              <h3 class="news__title">Бонусы для постоянных клиентов</h3>
+              <p class="news__text">Получай бонусы кэшбека с каждого пополнения.</p>
+              <a class="news__link" href="#">Подробнее →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FAQ -->
+    <section class="faq" id="faq">
+      <div class="container container--wide">
+        <header class="section-heading">
+          <span class="section-heading__ornament" aria-hidden="true">
+            <span class="section-heading__line"></span>
+            <span class="section-heading__gem"></span>
+          </span>
+          <h2 class="section-heading__title">Часто задаваемые вопросы</h2>
+          <span class="section-heading__ornament" aria-hidden="true">
+            <span class="section-heading__gem"></span>
+            <span class="section-heading__line"></span>
+          </span>
+        </header>
+
+        <div class="faq__grid">
+          <div class="faq__column">
+            <article class="faq__item" data-faq-item>
+              <button class="faq__question" type="button" data-faq-trigger aria-expanded="false">
+                <span class="faq__question-text">Безопасно ли пополнить игру через ваш сервис?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq__answer" role="region">
+                <p class="faq__answer-text">Да, мы используем защищённые платёжные шлюзы и не храним данные ваших карт. Все транзакции проходят через проверенные платёжные системы.</p>
+              </div>
+            </article>
+
+            <article class="faq__item" data-faq-item>
+              <button class="faq__question" type="button" data-faq-trigger aria-expanded="false">
+                <span class="faq__question-text">Как быстро приходит валюта после оплаты?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq__answer" role="region">
+                <p class="faq__answer-text">Валюта зачисляется мгновенно после подтверждения оплаты. В редких случаях это может занять до 5 минут.</p>
+              </div>
+            </article>
+
+            <article class="faq__item" data-faq-item>
+              <button class="faq__question" type="button" data-faq-trigger aria-expanded="false">
+                <span class="faq__question-text">Какие способы оплаты вы принимаете?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq__answer" role="region">
+                <p class="faq__answer-text">Мы принимаем банковские карты Visa, Mastercard, МИР, а также электронные кошельки и другие способы оплаты.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="faq__column">
+            <article class="faq__item" data-faq-item>
+              <button class="faq__question" type="button" data-faq-trigger aria-expanded="false">
+                <span class="faq__question-text">Могут ли заблокировать аккаунт за пополнение?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq__answer" role="region">
+                <p class="faq__answer-text">Нет, мы работаем через официальные каналы и не нарушаем правила игр. Ваш аккаунт в безопасности.</p>
+              </div>
+            </article>
+
+            <article class="faq__item" data-faq-item>
+              <button class="faq__question" type="button" data-faq-trigger aria-expanded="false">
+                <span class="faq__question-text">Что делать, если не пришла валюта?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq__answer" role="region">
+                <p class="faq__answer-text">Свяжитесь с нашей поддержкой 24/7. Мы оперативно решим проблему и зачислим валюту в кратчайшие сроки.</p>
+              </div>
+            </article>
+
+            <article class="faq__item" data-faq-item>
+              <button class="faq__question" type="button" data-faq-trigger aria-expanded="false">
+                <span class="faq__question-text">Есть ли скидки и бонусы?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq__answer" role="region">
+                <p class="faq__answer-text">Да, у нас действует программа лояльности с кэшбеком и регулярными акциями для постоянных клиентов.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Pre-footer CTA -->
+    <section class="cta-banner" id="cta">
+      <div class="cta-banner__bg" aria-hidden="true">
+        <div class="cta-banner__glow cta-banner__glow--right"></div>
+        <div class="cta-banner__glow cta-banner__glow--left"></div>
+      </div>
+      <div class="cta-banner__inner container">
+        <div class="cta-banner__content">
+          <h2 class="cta-banner__title">Готов к новым победам?</h2>
+          <p class="cta-banner__text">Пополняй игры быстро, безопасно и выгодно в BOOSTPAY Store!</p>
+          <a class="cta-banner__btn" href="#" data-cta="primary">
+            <span class="cta-banner__btn-gems" aria-hidden="true">
+              <span class="cta-banner__btn-gem cta-banner__btn-gem--tl"></span>
+              <span class="cta-banner__btn-gem cta-banner__btn-gem--tr"></span>
+              <span class="cta-banner__btn-gem cta-banner__btn-gem--bl"></span>
+              <span class="cta-banner__btn-gem cta-banner__btn-gem--br"></span>
+              <span class="cta-banner__btn-gem cta-banner__btn-gem--tc"></span>
+              <span class="cta-banner__btn-gem cta-banner__btn-gem--bc"></span>
+            </span>
+            <span class="cta-banner__btn-text">Пополнить сейчас</span>
+          </a>
+        </div>
+        <div class="cta-banner__visual" aria-hidden="true">
+          <div class="cta-banner__character"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 11. Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner container container--wide">
+      <div class="footer__top">
+        <!-- Brand column -->
+        <div class="footer__brand">
+          <a class="footer__logo" href="#hero" aria-label="BOOST PAY STORE — на главную">
+            <span class="footer__logo-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4L38 14V34L24 44L10 34V14L24 4Z" stroke="url(#footer-gem-stroke)" stroke-width="1.5"/>
+                <path d="M24 10L32 16V32L24 38L16 32V16L24 10Z" fill="url(#footer-gem-fill)"/>
+                <path d="M24 16L28 19V29L24 32L20 29V19L24 16Z" fill="#c4b5fd" opacity="0.9"/>
+                <defs>
+                  <linearGradient id="footer-gem-stroke" x1="10" y1="4" x2="38" y2="44">
+                    <stop stop-color="#a855f7"/>
+                    <stop offset="1" stop-color="#7c3aed"/>
+                  </linearGradient>
+                  <linearGradient id="footer-gem-fill" x1="16" y1="10" x2="32" y2="38">
+                    <stop stop-color="#9333ea"/>
+                    <stop offset="1" stop-color="#6d28d9"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span class="footer__logo-text">
+              <span class="footer__logo-title">
+                <span class="footer__logo-boost">BOOST</span>
+                <span class="footer__logo-pay">PAY</span>
+              </span>
+              <span class="footer__logo-subtitle">STORE</span>
+            </span>
+          </a>
+          <p class="footer__desc">Лучший сервис для пополнения баланса в популярных играх. Быстро. Безопасно. Выгодно.</p>
+          <div class="footer__payments">
+            <span class="footer__payment-icon footer__payment-icon--visa" aria-label="Visa">
+              <svg viewBox="0 0 48 32" fill="none"><rect width="48" height="32" rx="4" fill="#1a1f36"/><path d="M19.5 21h-3l1.9-10h3l-1.9 10zm10.1-9.7c-.6-.2-1.5-.5-2.6-.5-2.9 0-4.9 1.5-4.9 3.7 0 1.6 1.5 2.5 2.6 3 1.2.6 1.6.9 1.6 1.5 0 .8-1 1.2-1.9 1.2-1.3 0-2-.2-3.1-.7l-.4-.2-.5 2.8c.8.3 2.2.6 3.7.6 3.1 0 5.1-1.5 5.1-3.8 0-1.3-.8-2.2-2.5-3-.7-.4-1.1-.7-1.1-1.1 0-.4.5-1 1.6-1 1 0 1.7.2 2.2.4l.3.1.5-2.7zm6.5-.3h-2.3c-.7 0-1.3.2-1.6.9L26.5 21h3.2l.5-1.5h3.9L33 21h2.8l-3.3-9.7h.6zm-3.7 6.3l1-3 .5-1.5.3 1.4c.1.4.4 1.6.5 2.1h-2.3zM16.3 11.3l-2.9 6.6-.3-1.5c-.5-1.8-2.2-3.8-4-4.8l2.8 8.4h3.2l4.8-8.7h-3.6z" fill="#fff"/></svg>
+            </span>
+            <span class="footer__payment-icon footer__payment-icon--mc" aria-label="Mastercard">
+              <svg viewBox="0 0 48 32" fill="none"><rect width="48" height="32" rx="4" fill="#1a1f36"/><circle cx="19" cy="16" r="8" fill="#eb001b" opacity="0.9"/><circle cx="29" cy="16" r="8" fill="#f79e1b" opacity="0.9"/></svg>
+            </span>
+            <span class="footer__payment-icon footer__payment-icon--mir" aria-label="МИР">
+              <svg viewBox="0 0 48 32" fill="none"><rect width="48" height="32" rx="4" fill="#1a1f36"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="Inter, sans-serif">МИР</text></svg>
+            </span>
+            <span class="footer__payment-icon footer__payment-icon--sbp" aria-label="СБП">
+              <svg viewBox="0 0 48 32" fill="none"><rect width="48" height="32" rx="4" fill="#1a1f36"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" font-family="Inter, sans-serif">СБП</text></svg>
+            </span>
+            <span class="footer__payment-icon footer__payment-icon--apple" aria-label="Apple Pay">
+              <svg viewBox="0 0 48 32" fill="none"><rect width="48" height="32" rx="4" fill="#1a1f36"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="10" font-weight="600" font-family="Inter, sans-serif">Pay</text></svg>
+            </span>
+            <span class="footer__payment-icon footer__payment-icon--google" aria-label="Google Pay">
+              <svg viewBox="0 0 48 32" fill="none"><rect width="48" height="32" rx="4" fill="#1a1f36"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="10" font-weight="600" font-family="Inter, sans-serif">GPay</text></svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Navigation column -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Навигация</h4>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="#hero">Главная</a></li>
+            <li><a class="footer__link" href="#games">Игры</a></li>
+            <li><a class="footer__link" href="#reviews">Отзывы</a></li>
+            <li><a class="footer__link" href="#" data-cta="support">Поддержка</a></li>
+            <li><a class="footer__link" href="#faq">FAQ</a></li>
+            <li><a class="footer__link" href="#news">Блог</a></li>
+          </ul>
+        </div>
+
+        <!-- Company column -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Компания</h4>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="#">О нас</a></li>
+            <li><a class="footer__link" href="#">Правила сервиса</a></li>
+            <li><a class="footer__link" href="#">Политика конфиденциальности</a></li>
+            <li><a class="footer__link" href="#">Партнёрская программа</a></li>
+          </ul>
+        </div>
+
+        <!-- Support column -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Поддержка 24/7</h4>
+          <ul class="footer__links footer__links--support">
+            <li>
+              <a class="footer__link footer__link--support" href="#" data-social="telegram">
+                <svg class="footer__link-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 3L9 13m12-10l-4 18-5-8.5M21 3L3 10l6 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                @boostepay.support
+              </a>
+            </li>
+            <li>
+              <a class="footer__link footer__link--support" href="mailto:support@boostpaystore.ru">
+                <svg class="footer__link-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 7l9 5 9-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                support@boostpaystore.ru
+              </a>
+            </li>
+            <li>
+              <a class="footer__link footer__link--support" href="#" data-social="telegram">
+                <svg class="footer__link-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 3L9 13m12-10l-4 18-5-8.5M21 3L3 10l6 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Telegram-чат
+              </a>
+            </li>
+          </ul>
+          <div class="footer__socials">
+            <a class="footer__social" href="#" data-social="vk" aria-label="ВКонтакте">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 7h4l2 5-2 5H3l3-5-3-5zm5 0h4l2 5-2 5H8l3-5-3-5zm5 0h4l2 5-2 5h-4l3-5-3-5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="footer__social" href="#" data-social="telegram" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M21 3L9 13m12-10l-4 18-5-8.5M21 3L3 10l6 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="footer__social" href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M10 9l5 3-5 3V9z" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2024 BOOSTPAY Store. Все права защищены.</p>
+        <p class="footer__made">Разработано с <svg class="footer__heart" viewBox="0 0 24 24" fill="currentColor" aria-label="любовью"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> для геймеров</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

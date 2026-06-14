@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Section: News & Promotions (НОВОСТИ И АКЦИИ)
+   ========================================================================== */
+
+.news {
+  padding-top: 0;
+  padding-bottom: var(--space-section);
+  background: transparent;
+}
+
+/* Grid — 4 cards */
+.news__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* Single card */
+.news__card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(15, 15, 35, 0.6);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.news__card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(147, 51, 234, 0.5);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.2);
+}
+
+/* Image area */
+.news__image {
+  position: relative;
+  height: 10rem;
+  background: linear-gradient(135deg, rgba(30, 15, 60, 0.9), rgba(50, 25, 90, 0.7));
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--space-sm);
+}
+
+.news__card:nth-child(1) .news__image {
+  background: linear-gradient(135deg, #1a0a3e 0%, #3d1a7a 50%, #6b21a8 100%);
+}
+
+.news__card:nth-child(2) .news__image {
+  background: linear-gradient(135deg, #0a1a3e 0%, #1e3a8a 50%, #2563eb 100%);
+}
+
+.news__card:nth-child(3) .news__image {
+  background: linear-gradient(135deg, #0a2e1a 0%, #166534 50%, #16a34a 100%);
+}
+
+.news__card:nth-child(4) .news__image {
+  background: linear-gradient(135deg, #2e0a1a 0%, #7a1a3d 50%, #a855f7 100%);
+}
+
+/* Tag */
+.news__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.625rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.news__tag--promo {
+  background: linear-gradient(135deg, var(--color-accent-light), var(--color-accent-dark));
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.4);
+}
+
+.news__tag--news {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+}
+
+.news__tag--update {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.4);
+}
+
+/* Body */
+.news__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: var(--space-lg);
+}
+
+/* Date */
+.news__date {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+/* Title */
+.news__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+  line-height: var(--line-height-tight);
+}
+
+/* Text */
+.news__text {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+  flex: 1;
+}
+
+/* Link */
+.news__link {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent-light);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.news__link:hover {
+  color: var(--color-gold-light);
+}
+
+/* ─── Desktop wide ─── */
+@media (min-width: 1200px) {
+  .news__image {
+    height: 11rem;
+  }
+
+  .news__title {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* ─── Tablet ─── */
+@media (max-width: 1024px) {
+  .news__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 768px) {
+  .news__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    max-width: 24rem;
+    margin-inline: auto;
+  }
+
+  .news__card {
+    flex-direction: row;
+  }
+
+  .news__image {
+    width: 8rem;
+    min-width: 8rem;
+    height: auto;
+    min-height: 8rem;
+  }
+
+  .news__body {
+    padding: var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .news__card {
+    flex-direction: column;
+  }
+
+  .news__image {
+    width: 100%;
+    min-width: auto;
+    height: 8rem;
+    min-height: auto;
+  }
+}
