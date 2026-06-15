@@ -9,7 +9,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Base & section styles -->
   <link rel="stylesheet" href="css/base.css">
@@ -32,21 +32,7 @@
     <div class="header__inner container">
       <a class="header__logo" href="#hero" aria-label="BOOST PAY STORE — на главную">
         <span class="header__logo-icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 4L38 14V34L24 44L10 34V14L24 4Z" stroke="url(#logo-gem-stroke)" stroke-width="1.5"/>
-            <path d="M24 10L32 16V32L24 38L16 32V16L24 10Z" fill="url(#logo-gem-fill)"/>
-            <path d="M24 16L28 19V29L24 32L20 29V19L24 16Z" fill="#c4b5fd" opacity="0.9"/>
-            <defs>
-              <linearGradient id="logo-gem-stroke" x1="10" y1="4" x2="38" y2="44">
-                <stop stop-color="#a855f7"/>
-                <stop offset="1" stop-color="#7c3aed"/>
-              </linearGradient>
-              <linearGradient id="logo-gem-fill" x1="16" y1="10" x2="32" y2="38">
-                <stop stop-color="#9333ea"/>
-                <stop offset="1" stop-color="#6d28d9"/>
-              </linearGradient>
-            </defs>
-          </svg>
+          <img src="assets/images/hero/logo.png" alt="" width="48" height="48">
         </span>
         <span class="header__logo-text">
           <span class="header__logo-title">
@@ -114,6 +100,7 @@
     <!-- 2. Hero -->
     <section class="hero" id="hero">
       <div class="hero__bg" aria-hidden="true">
+        <div class="hero__bg-overlay"></div>
         <div class="hero__glow hero__glow--center"></div>
         <div class="hero__glow hero__glow--left"></div>
         <div class="hero__glow hero__glow--right"></div>
@@ -121,15 +108,8 @@
 
       <div class="hero__content container">
         <div class="hero__logo" aria-hidden="true">
-          <p class="hero__logo-title">
-            <span class="hero__logo-boost">BOOST</span>
-            <span class="hero__logo-pay">PAY</span>
-          </p>
-          <p class="hero__logo-subtitle">
-            <span class="hero__logo-line"></span>
-            <span>STORE</span>
-            <span class="hero__logo-line"></span>
-          </p>
+          <div class="hero__logo-text"><span class="hero__logo-boost">BOOST</span> <span class="hero__logo-pay">PAY</span></div>
+          <div class="hero__logo-store">— STORE —</div>
         </div>
 
         <h1 class="hero__title">Пополняй игры за секунды</h1>
@@ -268,44 +248,65 @@
 
           <div class="games__track" data-carousel-track tabindex="0" aria-label="Список игр в топе">
             <article class="games__card">
-              <div class="games__card-art games__card-art--fate" role="img" aria-label="Fate Grand Order"></div>
+              <div class="games__card-art games__card-art--tiles">
+                <img class="games__card-img" src="assets/images/games/TilesSurvive.jpg" alt="Tiles Survive" loading="lazy">
+              </div>
               <div class="games__card-footer">
-                <h3 class="games__card-title">Fate<br>Grand Order</h3>
+                <h3 class="games__card-title">Tiles<br>Survive</h3>
               </div>
             </article>
 
             <article class="games__card">
-              <div class="games__card-art games__card-art--genshin" role="img" aria-label="Genshin Impact"></div>
+              <div class="games__card-art games__card-art--lastasylum">
+                <img class="games__card-img" src="assets/images/games/LastAsylum.jpg" alt="Last Asylum" loading="lazy">
+              </div>
               <div class="games__card-footer">
-                <h3 class="games__card-title">Genshin<br>Impact</h3>
+                <h3 class="games__card-title">Last<br>Asylum</h3>
               </div>
             </article>
 
             <article class="games__card">
-              <div class="games__card-art games__card-art--honkai" role="img" aria-label="Honkai Star Rail"></div>
-              <div class="games__card-footer">
-                <h3 class="games__card-title">Honkai<br>Star Rail</h3>
+              <div class="games__card-art games__card-art--pubg">
+                <img class="games__card-img" src="assets/images/games/pubg.png" alt="PUBG Mobile" loading="lazy">
               </div>
-            </article>
-
-            <article class="games__card">
-              <div class="games__card-art games__card-art--warcraft" role="img" aria-label="Warcraft"></div>
-              <div class="games__card-footer">
-                <h3 class="games__card-title">Warcraft</h3>
-              </div>
-            </article>
-
-            <article class="games__card">
-              <div class="games__card-art games__card-art--diablo" role="img" aria-label="Diablo Immortal"></div>
-              <div class="games__card-footer">
-                <h3 class="games__card-title">Diablo<br>Immortal</h3>
-              </div>
-            </article>
-
-            <article class="games__card">
-              <div class="games__card-art games__card-art--pubg" role="img" aria-label="PUBG Mobile"></div>
               <div class="games__card-footer">
                 <h3 class="games__card-title">PUBG<br>Mobile</h3>
+              </div>
+            </article>
+
+            <article class="games__card">
+              <div class="games__card-art games__card-art--fortnite">
+                <img class="games__card-img" src="assets/images/games/Fortnite.png" alt="Fortnite" loading="lazy">
+              </div>
+              <div class="games__card-footer">
+                <h3 class="games__card-title">Fortnite</h3>
+              </div>
+            </article>
+
+            <article class="games__card">
+              <div class="games__card-art games__card-art--royalmatch">
+                <img class="games__card-img" src="assets/images/games/RoyalMatch.png" alt="Royal Match" loading="lazy">
+              </div>
+              <div class="games__card-footer">
+                <h3 class="games__card-title">Royal<br>Match</h3>
+              </div>
+            </article>
+
+            <article class="games__card">
+              <div class="games__card-art games__card-art--roblox">
+                <img class="games__card-img" src="assets/images/games/roblox.webp" alt="Roblox" loading="lazy">
+              </div>
+              <div class="games__card-footer">
+                <h3 class="games__card-title">Roblox</h3>
+              </div>
+            </article>
+
+            <article class="games__card">
+              <div class="games__card-art games__card-art--highrise">
+                <img class="games__card-img" src="assets/images/games/Highrise.jpg" alt="Highrise" loading="lazy">
+              </div>
+              <div class="games__card-footer">
+                <h3 class="games__card-title">Highrise</h3>
               </div>
             </article>
 
@@ -350,58 +351,49 @@
         </header>
 
         <div class="how-it-works__steps">
-          <article class="how-it-works__step">
-            <div class="how-it-works__step-number" aria-hidden="true">1</div>
-            <div class="how-it-works__step-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="6" y="14" width="36" height="22" rx="4" stroke="currentColor" stroke-width="2"/>
-                <circle cx="16" cy="25" r="3" stroke="currentColor" stroke-width="2"/>
-                <circle cx="32" cy="25" r="3" stroke="currentColor" stroke-width="2"/>
-                <path d="M22 21h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M24 21v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
+          <article class="how-it-works__card">
+            <div class="how-it-works__card-content">
+              <div class="how-it-works__card-header">
+                <div class="how-it-works__step-number" aria-hidden="true"><span>1</span></div>
+                <h3 class="how-it-works__step-title">Выбери игру</h3>
+              </div>
+              <p class="how-it-works__step-text">Выбери игру из списка и укажи нужное количество валюты</p>
             </div>
-            <h3 class="how-it-works__step-title">Выбери игру</h3>
-            <p class="how-it-works__step-text">Выбери игру из списка и укажи нужное количество валюты</p>
+            <div class="how-it-works__card-image">
+              <div class="how-it-works__step-image">
+                <img src="assets/images/games/pubg.png" alt="Выбор игры" loading="lazy">
+              </div>
+            </div>
           </article>
 
-          <div class="how-it-works__connector" aria-hidden="true">
-            <span class="how-it-works__connector-line"></span>
-            <span class="how-it-works__connector-dot"></span>
-            <span class="how-it-works__connector-line"></span>
-          </div>
-
-          <article class="how-it-works__step">
-            <div class="how-it-works__step-number" aria-hidden="true">2</div>
-            <div class="how-it-works__step-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10" y="6" width="28" height="36" rx="3" stroke="currentColor" stroke-width="2"/>
-                <path d="M18 18h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M18 24h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M18 30h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
+          <article class="how-it-works__card">
+            <div class="how-it-works__card-content">
+              <div class="how-it-works__card-header">
+                <div class="how-it-works__step-number" aria-hidden="true"><span>2</span></div>
+                <h3 class="how-it-works__step-title">Введи данные</h3>
+              </div>
+              <p class="how-it-works__step-text">Укажи свой ID или никнейм и выбери удобный способ оплаты</p>
             </div>
-            <h3 class="how-it-works__step-title">Введи данные</h3>
-            <p class="how-it-works__step-text">Укажи свой ID или никнейм и выбери удобный способ оплаты</p>
+            <div class="how-it-works__card-image">
+              <div class="how-it-works__step-image">
+                <img src="assets/images/hero/2.png" alt="Ввод данных" loading="lazy">
+              </div>
+            </div>
           </article>
 
-          <div class="how-it-works__connector" aria-hidden="true">
-            <span class="how-it-works__connector-line"></span>
-            <span class="how-it-works__connector-dot"></span>
-            <span class="how-it-works__connector-line"></span>
-          </div>
-
-          <article class="how-it-works__step">
-            <div class="how-it-works__step-number" aria-hidden="true">3</div>
-            <div class="how-it-works__step-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 6L30 14V30L24 38L18 30V14L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M24 14L27 18V26L24 29L21 26V18L24 14Z" fill="currentColor" opacity="0.3"/>
-                <path d="M18 38L24 44L30 38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          <article class="how-it-works__card">
+            <div class="how-it-works__card-content">
+              <div class="how-it-works__card-header">
+                <div class="how-it-works__step-number" aria-hidden="true"><span>3</span></div>
+                <h3 class="how-it-works__step-title">Получи валюту</h3>
+              </div>
+              <p class="how-it-works__step-text">Оплата произведена, валюта начислена на твой аккаунт моментально</p>
             </div>
-            <h3 class="how-it-works__step-title">Получи валюту</h3>
-            <p class="how-it-works__step-text">Оплата произведена, валюта начислена на твой аккаунт моментально</p>
+            <div class="how-it-works__card-image">
+              <div class="how-it-works__step-image">
+                <img src="assets/images/hero/treasure.png" alt="Получение валюты" loading="lazy">
+              </div>
+            </div>
           </article>
         </div>
       </div>
@@ -583,7 +575,7 @@
               <span class="news__tag news__tag--promo">АКЦИЯ</span>
             </div>
             <div class="news__body">
-              <time class="news__date" datetime="2024-05-20">20.05.2024</time>
+              <time class="news__date" datetime="2024-05-20">15.06.2026</time>
               <h3 class="news__title">Скидки до 20% на пополнение игр!</h3>
               <p class="news__text">Только до конца недели специальные условия на пополнение игр.</p>
               <a class="news__link" href="#">Подробнее →</a>
@@ -595,7 +587,7 @@
               <span class="news__tag news__tag--news">НОВОСТЬ</span>
             </div>
             <div class="news__body">
-              <time class="news__date" datetime="2024-05-18">18.05.2024</time>
+              <time class="news__date" datetime="2024-05-18">18.05.2026</time>
               <h3 class="news__title">Добавили новые способы оплаты!</h3>
               <p class="news__text">Теперь доступны все банковские карты для пополнения баланса.</p>
               <a class="news__link" href="#">Подробнее →</a>
@@ -750,21 +742,7 @@
         <div class="footer__brand">
           <a class="footer__logo" href="#hero" aria-label="BOOST PAY STORE — на главную">
             <span class="footer__logo-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 4L38 14V34L24 44L10 34V14L24 4Z" stroke="url(#footer-gem-stroke)" stroke-width="1.5"/>
-                <path d="M24 10L32 16V32L24 38L16 32V16L24 10Z" fill="url(#footer-gem-fill)"/>
-                <path d="M24 16L28 19V29L24 32L20 29V19L24 16Z" fill="#c4b5fd" opacity="0.9"/>
-                <defs>
-                  <linearGradient id="footer-gem-stroke" x1="10" y1="4" x2="38" y2="44">
-                    <stop stop-color="#a855f7"/>
-                    <stop offset="1" stop-color="#7c3aed"/>
-                  </linearGradient>
-                  <linearGradient id="footer-gem-fill" x1="16" y1="10" x2="32" y2="38">
-                    <stop stop-color="#9333ea"/>
-                    <stop offset="1" stop-color="#6d28d9"/>
-                  </linearGradient>
-                </defs>
-              </svg>
+              <img src="assets/images/hero/logo.png" alt="" width="48" height="48">
             </span>
             <span class="footer__logo-text">
               <span class="footer__logo-title">

@@ -4,10 +4,10 @@
 
 :root {
   /* Colors */
-  --color-bg-primary: #050510;
-  --color-bg-secondary: #0a0a1a;
-  --color-bg-card: rgba(15, 15, 35, 0.8);
-  --color-bg-overlay: rgba(5, 5, 16, 0.85);
+  --color-bg-primary: #0a0612;
+  --color-bg-secondary: #12082a;
+  --color-bg-card: rgba(15, 10, 30, 0.8);
+  --color-bg-overlay: rgba(5, 3, 12, 0.85);
 
   --color-accent: #7c3aed;
   --color-accent-light: #9333ea;
@@ -56,7 +56,7 @@
   --space-2xl: 3rem;
   --space-3xl: 4rem;
   --space-section: 3.75rem;
-  --space-section-gap: 2.5rem;
+  --space-section-gap: 4rem;
 
   /* Layout */
   --header-height: 4.5rem;
@@ -118,11 +118,29 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   color: var(--color-text-primary);
-  background: linear-gradient(135deg, #0d0d1a 0%, #1a0a2e 50%, #0d0d1a 100%);
-  background-color: #0d0d1a;
+  background: #0a0612;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url('../assets/images/hero/fon.png') center 30% / cover no-repeat;
+  filter: brightness(0.85) contrast(1.15) saturate(1.4);
+  z-index: -2;
+  pointer-events: none;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 3, 12, 0.55);
+  z-index: -1;
+  pointer-events: none;
 }
 
 main {
