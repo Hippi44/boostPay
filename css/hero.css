@@ -24,7 +24,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(5, 3, 12, 0.55);
+  background: transparent;
   z-index: 1;
   pointer-events: none;
 }
@@ -100,6 +100,7 @@
 
 /* Title & subtitle */
 .hero__title {
+  font-family: 'Cinzel', Georgia, serif;
   font-size: clamp(1.375rem, 3.8vw, var(--font-size-hero));
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
@@ -111,7 +112,7 @@
 .hero__subtitle {
   font-size: clamp(0.9375rem, 2vw, var(--font-size-lg));
   font-weight: var(--font-weight-normal);
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   letter-spacing: 0.02em;
 }
 
@@ -149,133 +150,37 @@
   height: 100%;
 }
 
-/* CTA button with gold decorative frame */
+/* CTA button with image */
 .hero__cta {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-top: clamp(0.5rem, 1.5vh, 1rem);
-  padding: clamp(0.875rem, 2vh, 1.125rem) clamp(2.25rem, 5vw, 3.25rem);
   min-width: min(16rem, 100%);
   max-width: 22rem;
-  background: linear-gradient(180deg, #9333ea 0%, #6d28d9 40%, #4c1d95 100%);
-  border: 2px solid var(--color-gold);
-  border-radius: var(--radius-sm);
-  box-shadow:
-    0 0 25px rgba(147, 51, 234, 0.6),
-    0 0 50px rgba(147, 51, 234, 0.3),
-    0 0 15px rgba(212, 168, 83, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
-  transition:
-    transform var(--transition-base),
-    box-shadow var(--transition-base),
-    border-color var(--transition-base);
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: transform var(--transition-base), filter var(--transition-base);
+}
+
+.hero__cta-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
 }
 
 .hero__cta:hover {
   transform: translateY(-2px);
-  border-color: var(--color-gold-light);
-  box-shadow:
-    0 0 35px rgba(147, 51, 234, 0.8),
-    0 0 70px rgba(147, 51, 234, 0.4),
-    0 0 25px rgba(212, 168, 83, 0.6),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+  filter: brightness(1.15);
 }
 
-.hero__cta-text {
-  position: relative;
-  z-index: 1;
-  font-size: clamp(0.75rem, 1.8vw, var(--font-size-sm));
-  font-weight: var(--font-weight-bold);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-text-primary);
+.hero__cta:hover .hero__cta-img {
+  filter: drop-shadow(0 0 12px rgba(212, 168, 83, 0.6));
 }
-
-/* Decorative diamond gems on CTA border */
-.hero__cta-gems {
-  position: absolute;
-  inset: -6px;
-  pointer-events: none;
-}
-
-.hero__cta-gem {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background: var(--color-gold-light);
-  transform: rotate(45deg);
-  box-shadow:
-    0 0 10px rgba(212, 168, 83, 1),
-    0 0 20px rgba(212, 168, 83, 0.6),
-    0 0 3px rgba(255, 255, 255, 0.5);
-}
-
-/* Corner bracket ornaments */
-.hero__cta-gem--tl,
-.hero__cta-gem--tr,
-.hero__cta-gem--bl,
-.hero__cta-gem--br {
-  width: 12px;
-  height: 12px;
-  background: transparent;
-  transform: none;
-  box-shadow: none;
-}
-
-.hero__cta-gem--tl {
-  top: -2px;
-  left: -2px;
-  border-top: 2px solid var(--color-gold);
-  border-left: 2px solid var(--color-gold);
-}
-
-.hero__cta-gem--tr {
-  top: -2px;
-  right: -2px;
-  border-top: 2px solid var(--color-gold);
-  border-right: 2px solid var(--color-gold);
-}
-
-.hero__cta-gem--bl {
-  bottom: -2px;
-  left: -2px;
-  border-bottom: 2px solid var(--color-gold);
-  border-left: 2px solid var(--color-gold);
-}
-
-.hero__cta-gem--br {
-  bottom: -2px;
-  right: -2px;
-  border-bottom: 2px solid var(--color-gold);
-  border-right: 2px solid var(--color-gold);
-}
-
-.hero__cta-gem--tl::after,
-.hero__cta-gem--tr::after,
-.hero__cta-gem--bl::after,
-.hero__cta-gem--br::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: var(--color-gold);
-  transform: rotate(45deg);
-  box-shadow: 0 0 8px rgba(212, 168, 83, 1);
-}
-
-.hero__cta-gem--tl::after { top: -5px; left: -5px; }
-.hero__cta-gem--tr::after { top: -5px; right: -5px; }
-.hero__cta-gem--bl::after { bottom: -5px; left: -5px; }
-.hero__cta-gem--br::after { bottom: -5px; right: -5px; }
-
-.hero__cta-gem--tc { top: -5px; left: 50%; margin-left: -4px; }
-.hero__cta-gem--ml { top: 50%; left: -5px; margin-top: -4px; }
-.hero__cta-gem--mr { top: 50%; right: -5px; margin-top: -4px; }
-.hero__cta-gem--bc { bottom: -5px; left: 50%; margin-left: -4px; }
 
 /* Tablet */
 @media (max-width: 1024px) {

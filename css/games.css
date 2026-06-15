@@ -242,8 +242,8 @@
   background: linear-gradient(
     180deg,
     rgba(88, 28, 135, 0.05) 0%,
-    rgba(5, 5, 16, 0.1) 50%,
-    rgba(5, 5, 16, 0.55) 100%
+    rgba(8, 12, 26, 0.1) 50%,
+    rgba(8, 12, 26, 0.55) 100%
   );
   mix-blend-mode: multiply;
   pointer-events: none;
@@ -303,7 +303,7 @@
 
 .games__card-art--more {
   background:
-    linear-gradient(180deg, transparent 35%, rgba(5, 5, 16, 0.9) 100%),
+    linear-gradient(180deg, transparent 35%, rgba(8, 12, 26, 0.9) 100%),
     linear-gradient(145deg, #0f0525 0%, #1e0a3d 40%, #2d1065 70%, #4c1d95 100%);
   display: flex;
   align-items: center;
@@ -324,7 +324,7 @@
   bottom: 0;
   z-index: 1;
   padding: 2.75rem 0.5rem 0.625rem;
-  background: linear-gradient(180deg, transparent, rgba(5, 5, 16, 0.98));
+  background: linear-gradient(180deg, transparent, rgba(8, 12, 26, 0.98));
 }
 
 .games__card-title {
