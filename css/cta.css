@@ -79,29 +79,32 @@
   align-items: center;
   justify-content: center;
   margin-top: clamp(0.5rem, 1.5vh, 1rem);
-  min-width: min(18rem, 90%);
-  max-width: 24rem;
-  background: none;
+  width: clamp(14rem, 50%, 24rem);
+  aspect-ratio: 1959 / 544;
+  padding: 2.5% 4%;
+  background: url('../assets/images/hero/button.png') center / 100% 100% no-repeat;
   border: none;
   box-shadow: none;
+  overflow: hidden;
   transition: transform var(--transition-base), filter var(--transition-base);
   text-decoration: none;
 }
 
-.cta-banner__btn-img {
-  width: 100%;
-  height: auto;
-  display: block;
+.cta-banner__btn-text {
+  font-family: 'Cinzel', Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(0.7rem, 2.2vw, 1.2rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 0 10px rgba(168, 85, 247, 0.4);
   pointer-events: none;
+  white-space: nowrap;
 }
 
 .cta-banner__btn:hover {
   transform: translateY(-2px);
   filter: brightness(1.15);
-}
-
-.cta-banner__btn:hover .cta-banner__btn-img {
-  filter: drop-shadow(0 0 12px rgba(212, 168, 83, 0.6));
 }
 
 /* Corner ornaments for section border */
@@ -139,6 +142,10 @@
   .cta-banner {
     min-height: clamp(18rem, 28vw, 24rem);
   }
+
+  .cta-banner__btn {
+    width: clamp(14rem, 55%, 22rem);
+  }
 }
 
 /* ─── Mobile ─── */
@@ -149,6 +156,11 @@
   }
 
   .cta-banner__btn {
-    width: 90%;
+    width: 85%;
+  }
+
+  .cta-banner__btn-text {
+    font-size: clamp(0.6rem, 4.5vw, 0.85rem);
+    letter-spacing: 0.05em;
   }
 }
