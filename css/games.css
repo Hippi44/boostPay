@@ -13,27 +13,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(0.75rem, 2vw, 1.25rem);
+  gap: clamp(0.5rem, 1.5vw, 0.875rem);
   margin-bottom: var(--space-section-gap);
 }
 
 .section-heading__ornament {
   display: flex;
   align-items: center;
-  gap: 0.625rem;
+  gap: 0.5rem;
   flex: 1;
-  max-width: 14rem;
-}
-
-.section-heading__ornament:last-child {
-  flex-direction: row-reverse;
+  max-width: 10rem;
 }
 
 .section-heading__line {
   flex: 1;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(212, 168, 83, 0.55), transparent);
-  opacity: 0.9;
+  height: 2px;
+  min-width: 2rem;
+  background: linear-gradient(90deg, transparent, rgba(212, 168, 83, 0.7), transparent);
+  opacity: 1;
 }
 
 .section-heading__gem {
@@ -331,7 +328,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.125rem;
+  height: 2.125rem;
   padding: 0.375rem 0.375rem;
   border: 1px solid rgba(212, 168, 83, 0.65);
   border-radius: 0.1875rem;
@@ -409,7 +406,7 @@
 
   .games__card-title {
     font-size: clamp(0.5625rem, 2.8vw, 0.6875rem);
-    min-height: 1.875rem;
+    height: 1.875rem;
   }
 }
 

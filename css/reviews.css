@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Section: Reviews (ОТЗЫВЫ НАШИХ КЛИЕНТОВ)
+   Section: Reviews (кнопка «Отзывы» → Telegram)
    ========================================================================== */
 
 .reviews {
@@ -8,151 +8,39 @@
   background: transparent;
 }
 
-/* Grid — 4 cards */
-.reviews__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(1rem, 2vw, 1.5rem);
-}
-
-/* Single card */
-.reviews__card {
+.reviews__btn-wrap {
   display: flex;
-  flex-direction: row;
-  background: rgba(15, 15, 35, 0.6);
-  border: 1px solid rgba(124, 58, 237, 0.25);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
-}
-
-.reviews__card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(147, 51, 234, 0.5);
-  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.2);
-}
-
-/* Character image */
-.reviews__image {
-  width: 40%;
-  min-height: 180px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.reviews__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-}
-
-/* Info section */
-.reviews__info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding: var(--space-lg);
-  gap: var(--space-xs);
 }
 
-/* Name */
-.reviews__name {
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-text-primary);
-  margin: 0;
+.reviews__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: min(16rem, 100%);
+  max-width: 22rem;
+  transition: transform var(--transition-base), filter var(--transition-base);
 }
 
-/* Stars */
-.reviews__stars {
-  display: flex;
-  gap: 2px;
+.reviews__btn-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
 }
 
-.reviews__star {
-  font-size: 1rem;
-  color: var(--color-gold);
-  text-shadow: 0 0 8px rgba(212, 168, 83, 0.5);
-  line-height: 1;
+.reviews__btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.15);
 }
 
-/* Text */
-.reviews__text {
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-relaxed);
-  color: var(--color-text-secondary);
-  font-style: italic;
-  margin: 0;
+.reviews__btn:hover .reviews__btn-img {
+  filter: drop-shadow(0 0 12px rgba(212, 168, 83, 0.6));
 }
 
-/* ─── Desktop wide ─── */
-@media (min-width: 1200px) {
-  .reviews__card {
-    min-height: 200px;
-  }
-
-  .reviews__info {
-    padding: var(--space-xl);
-  }
-}
-
-/* ─── Tablet ─── */
-@media (max-width: 1024px) {
-  .reviews__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-lg);
-  }
-}
-
-/* ─── Mobile ─── */
-@media (max-width: 768px) {
-  .reviews__grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
-    max-width: 24rem;
-    margin-inline: auto;
-  }
-
-  .reviews__card {
-    min-height: 140px;
-  }
-
-  .reviews__image {
-    width: 35%;
-    min-height: 140px;
-  }
-
-  .reviews__info {
-    padding: var(--space-md);
-  }
-
-  .reviews__text {
-    font-size: var(--font-size-xs);
-  }
-}
-
-@media (max-width: 480px) {
-  .reviews__grid {
-    max-width: 100%;
-  }
-
-  .reviews__card {
-    flex-direction: column;
-  }
-
-  .reviews__image {
+/* Mobile */
+@media (max-width: 600px) {
+  .reviews__btn {
     width: 100%;
-    min-height: 180px;
-  }
-
-  .reviews__info {
-    text-align: center;
-    align-items: center;
-  }
-
-  .reviews__stars {
-    justify-content: center;
   }
 }

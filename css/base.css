@@ -247,3 +247,10 @@ button {
   border-color: var(--color-accent);
   background: rgba(124, 58, 237, 0.1);
 }
+
+@media (max-width: 768px) {
+  body::before {
+    background-position: center 25%;
+    background-size: cover;
+  }
+}
